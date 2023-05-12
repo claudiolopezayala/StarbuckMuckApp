@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_411_2P_EX.Welcome"
+             Title="Welcome">
+    <ScrollView
+        VerticalScrollBarVisibility="Never">
+        <VerticalStackLayout
+            BackgroundColor="#f7f7f7">
+            <VerticalStackLayout
+                Spacing="10"
+                BackgroundColor="#ffffff"
+                Padding="0,20,0,15">
+
+                <Label
+                Text="Bienvenido (a)☕"
+                FontFamily="CoffeCake"
+                FontSize="32"
+                Margin="5,35,0,0"/>
+
+                <Grid
+                ColumnDefinitions="*,30"
+                Margin="5,20,0,0">
+                    <HorizontalStackLayout
+                    Spacing="20">
+
+                        <HorizontalStackLayout
+                        Spacing="5">
+
+                            <Image
+                                VerticalOptions="Center">
+                                <Image.Source>
+                                    <FontImageSource
+                                FontFamily="Iconos"
+                                Color="Black"
+                                Size="20"
+                                Glyph="&#xE800;"/>
+                                </Image.Source>
+                            </Image>
+
+                            <Label
+                                VerticalOptions="Center"
+                        Text="Ingresar"
+                        FontFamily="CoffeCake"
+                        FontSize="18"/>
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout
+                    Spacing="5">
+
+                            <Image
+                                VerticalOptions="Center">
+                                <Image.Source>
+                                    <FontImageSource
+                                FontFamily="Iconos"
+                                Color="Black"
+                                Size="20"
+                                Glyph="&#xE801;"/>
+                                </Image.Source>
+                            </Image>
+
+                            <Label
+                                VerticalOptions="Center"
+                        Text="Inbox"
+                        FontFamily="CoffeCake"
+                        FontSize="18"/>
+                        </HorizontalStackLayout>
+
+                        <Image>
+                            <Image.Source>
+                                <FontImageSource
+                                FontFamily="Iconos"
+                                Color="Black"
+                                Size="20"
+                                Glyph="&#xE802;"/>
+                            </Image.Source>
+                        </Image>
+
+                    </HorizontalStackLayout>
+
+                    <Image
+                    Grid.Column="1"
+                    Margin="0,0,10,0">
+                        <Image.Source>
+                            <FontImageSource
+                                FontFamily="Iconos"
+                                Color="Black"
+                                Size="20"
+                                Glyph="&#xE803;"/>
+                        </Image.Source>
+                    </Image>
+                </Grid>
+            </VerticalStackLayout>
+
+            <Frame
+                HeightRequest="15"
+                BorderColor="Transparent"
+                CornerRadius="0">
+                <Frame.Background>
+                    <LinearGradientBrush
+                        EndPoint="0,1">
+                        <GradientStop 
+                            Offset="0.0"
+                            Color="#dddddd"/>
+                        <GradientStop 
+                            Offset="0.0"
+                            Color="Transparent"/>
+                    </LinearGradientBrush>
+                </Frame.Background>
+            </Frame>
+
+            <Label
+                Text="STARBUCKS REWARDS"
+                FontFamily="CoffeCake"
+                FontSize="12"
+                Margin="10,0,0,0"/>
+
+            <ScrollView
+                HorizontalScrollBarVisibility="Never"
+                Orientation="Horizontal">
+                <HorizontalStackLayout
+                    Spacing="20"
+                    Margin="10,10,15,0">
+
+                    <VerticalStackLayout>
+
+                        <Frame
+                            BorderColor="Transparent"
+                        WidthRequest="350"
+                        HeightRequest="215">
+                            <Image
+                            Margin="-50"
+                            Source="promotion1"/>
+                        </Frame>
+
+                        <Label
+                            Margin="8,15,0,0"
+                            Text="Obten bebidas gratis, alimentos y mas"
+                            FontFamily="CoffeCake"/>
+
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout>
+
+                        <Frame
+                            BorderColor="Transparent"
+                        WidthRequest="350"
+                        HeightRequest="215">
+                            <Image
+                            Margin="-50"
+                            Source="promotion2"/>
+                        </Frame>
+
+                        <Label
+                            Margin="8,15,0,0"
+                            Text="Descuentos increibles"
+                            FontFamily="CoffeCake"/>
+
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout>
+
+                        <Frame
+                            BorderColor="Transparent"
+                        WidthRequest="350"
+                        HeightRequest="215">
+                            <Image
+                            Margin="-50"
+                            Source="promotion3"/>
+                        </Frame>
+
+                        <Label
+                            Margin="8,15,0,0"
+                            Text="Obten puntos"
+                            FontFamily="CoffeCake"/>
+
+                    </VerticalStackLayout>
+
+                </HorizontalStackLayout>
+            </ScrollView>
+
+
+            <Border
+                Margin="5,40,5,5"
+                Padding="0">
+
+                <Border.StrokeShape>
+                    <RoundRectangle
+                        CornerRadius="10,10,10,10"/>
+                </Border.StrokeShape>
+                <Border.Shadow>
+                    <Shadow Brush="#5e5e5e"
+                        Offset="-10,30"
+                        Radius="40"
+                        Opacity="0.8" />
+                </Border.Shadow>
+                <VerticalStackLayout
+                    Margin="0">
+                    <Image
+                        Source="standar1.jpg"
+                        Margin="-50"/>
+                    <Grid
+                        ColumnDefinitions=".7*,.3*"
+                        Margin="10,60,10,10"
+                        RowDefinitions="35">
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Text="Prueba nuesto cafe"
+                            VerticalOptions="Center"
+                            FontSize="18"
+                            Margin="20,0,0,0"
+                            FontFamily="CoffeCake"/>
+                        <Button
+                            Grid.Column="1"
+                            Grid.Row="0"
+                            WidthRequest="90"
+                            FontFamily="CoffeCake"
+                            Text="Detalles"
+                            HorizontalOptions="End"
+                            CornerRadius="15"/>
+
+                    </Grid>
+                </VerticalStackLayout>
+
+            </Border>
+
+            <Border
+                Margin="5,10,5,50"
+                Padding="0">
+
+                <Border.StrokeShape>
+                    <RoundRectangle
+                        CornerRadius="10,10,10,10"/>
+                </Border.StrokeShape>
+                <Border.Shadow>
+                    <Shadow Brush="#5e5e5e"
+                        Offset="-10,30"
+                        Radius="40"
+                        Opacity="0.8" />
+                </Border.Shadow>
+                <VerticalStackLayout
+                    Margin="0">
+                    <Image
+                        Source="standar2.jpg"
+                        Margin="-50"/>
+                    <Grid
+                        ColumnDefinitions=".7*,.3*"
+                        Margin="10,60,10,10"
+                        RowDefinitions="35">
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Text="Prueba nuesto cafe"
+                            VerticalOptions="Center"
+                            FontSize="18"
+                            Margin="20,0,0,0"
+                            FontFamily="CoffeCake"/>
+                        <Button
+                            Grid.Column="1"
+                            Grid.Row="0"
+                            WidthRequest="90"
+                            FontFamily="CoffeCake"
+                            Text="Detalles"
+                            HorizontalOptions="End"
+                            CornerRadius="15"/>
+
+                    </Grid>
+                </VerticalStackLayout>
+
+            </Border>
+
+            
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

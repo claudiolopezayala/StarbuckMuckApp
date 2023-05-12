@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_411_2P_EX.Menu"
+             Title="Menu">
+    <ScrollView
+        VerticalScrollBarVisibility="Never">
+        <VerticalStackLayout
+            BackgroundColor="#f7f7f7">
+            <VerticalStackLayout
+                Spacing="10"
+                BackgroundColor="#ffffff"
+                Padding="0,20,0,15">
+
+                <Label
+                Text="Ordena"
+                FontFamily="CoffeCake"
+                FontSize="32"
+                Margin="5,35,0,0"/>
+
+                <Grid
+                ColumnDefinitions="*,30"
+                Margin="5,20,0,0">
+                </Grid>
+
+            </VerticalStackLayout>
+
+            <Frame
+                HeightRequest="15"
+                BorderColor="Transparent"
+                CornerRadius="0">
+                <Frame.Background>
+                    <LinearGradientBrush
+                        EndPoint="0,1">
+                        <GradientStop 
+                            Offset="0.0"
+                            Color="#dddddd"/>
+                        <GradientStop 
+                            Offset="0.0"
+                            Color="Transparent"/>
+                    </LinearGradientBrush>
+                </Frame.Background>
+            </Frame>
+
+            <VerticalStackLayout
+                Margin="10,0,10,0"
+                Spacing="20">
+
+                <Label
+                Text="Bebidas"
+                FontFamily="CoffeCake"
+                FontSize="28"
+                FontAttributes="Bold"/>
+
+                <VerticalStackLayout
+                    Spacing="10">
+                    <HorizontalStackLayout
+                        Spacing="10">
+                        <Frame
+                            WidthRequest="70"
+                            HeightRequest="70"
+                            CornerRadius="35">
+                            <Image
+                                Source="frapuccino.jpg"
+                                Margin="-50"
+                                WidthRequest="70"
+                                HeightRequest="70"/>
+                        </Frame>
+
+                        <Label
+                            Text="Frapuccinos"
+                            FontFamily="CoffeCake"
+                            FontSize="20"
+                            VerticalOptions="Center"/>
+
+                    </HorizontalStackLayout>
+
+
+                    <HorizontalStackLayout
+                        Spacing="10">
+                        <Frame
+                            WidthRequest="70"
+                            HeightRequest="70"
+                            CornerRadius="35">
+                            <Image
+                                Source="hot_drinks.jpg"
+                                Margin="-50"
+                                WidthRequest="70"
+                                HeightRequest="70"/>
+                        </Frame>
+
+                        <Label
+                            Text="Bebidas calientes"
+                            FontFamily="CoffeCake"
+                            FontSize="20"
+                            VerticalOptions="Center"/>
+
+                    </HorizontalStackLayout>
+
+
+                    <HorizontalStackLayout
+                        Spacing="10">
+                        <Frame
+                            WidthRequest="70"
+                            HeightRequest="70"
+                            CornerRadius="35">
+                            <Image
+                                Source="hot_tea.jpg"
+                                Margin="-50"
+                                WidthRequest="70"
+                                HeightRequest="70"/>
+                        </Frame>
+
+                        <Label
+                            Text="Te caliente"
+                            FontFamily="CoffeCake"
+                            FontSize="20"
+                            VerticalOptions="Center"/>
+
+                    </HorizontalStackLayout>
+
+
+                    <HorizontalStackLayout
+                        Spacing="10">
+                        <Frame
+                            WidthRequest="70"
+                            HeightRequest="70"
+                            CornerRadius="35">
+                            <Image
+                                Source="iced_tea.jpg"
+                                Margin="-50"
+                                WidthRequest="70"
+                                HeightRequest="70"/>
+                        </Frame>
+
+                        <Label
+                            Text="Te frio"
+                            FontFamily="CoffeCake"
+                            FontSize="20"
+                            VerticalOptions="Center"/>
+
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout
+                    Spacing="5">
+                    <BoxView
+                        HeightRequest="0.2"
+                        BackgroundColor="DimGray"
+                        HorizontalOptions="Center"
+                        WidthRequest="300"/>
+                    <Label
+                        Text="Comida"
+                        FontFamily="CoffeCake"
+                        FontSize="28"
+                        Margin="0,0,0,0"
+                        FontAttributes="Bold"/>
+                </VerticalStackLayout>
+                
+
+                <VerticalStackLayout
+                    Spacing="10">
+                    <HorizontalStackLayout
+                        Spacing="10">
+                        <Frame
+                            WidthRequest="70"
+                            HeightRequest="70"
+                            CornerRadius="35">
+                            <Image
+                                Source="bakery.jpg"
+                                Margin="-50"
+                                WidthRequest="70"
+                                HeightRequest="70"/>
+                        </Frame>
+
+                        <Label
+                            Text="Panaderia"
+                            FontFamily="CoffeCake"
+                            FontSize="20"
+                            VerticalOptions="Center"/>
+
+                    </HorizontalStackLayout>
+
+
+                    <HorizontalStackLayout
+                        Spacing="10">
+                        <Frame
+                            WidthRequest="70"
+                            HeightRequest="70"
+                            CornerRadius="35">
+                            <Image
+                                Source="hot_breaakfast.jpg"
+                                Margin="-50"
+                                WidthRequest="70"
+                                HeightRequest="70"/>
+                        </Frame>
+
+                        <Label
+                            Text="Desayuno caliente"
+                            FontFamily="CoffeCake"
+                            FontSize="20"
+                            VerticalOptions="Center"/>
+
+                    </HorizontalStackLayout>
+
+
+                    <HorizontalStackLayout
+                        Spacing="10">
+                        <Frame
+                            WidthRequest="70"
+                            HeightRequest="70"
+                            CornerRadius="35">
+                            <Image
+                                Source="lunch.jpg"
+                                Margin="-50"
+                                WidthRequest="70"
+                                HeightRequest="70"/>
+                        </Frame>
+
+                        <Label
+                            Text="Lunch"
+                            FontFamily="CoffeCake"
+                            FontSize="20"
+                            VerticalOptions="Center"/>
+
+                    </HorizontalStackLayout>
+
+                </VerticalStackLayout>
+
+            </VerticalStackLayout>
+
+
+        </VerticalStackLayout>
+        
+    </ScrollView>
+</ContentPage>
